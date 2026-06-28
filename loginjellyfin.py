@@ -11,7 +11,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("--incognito")
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-driver.get("http://YOUR_JELLYFIN_SERVER_URL" )
+driver.get("http://YOUR_JELLYFIN_SERVER_URL")
 driver.maximize_window()
 # Wait for elements to be present
 wait = WebDriverWait(driver, 20)

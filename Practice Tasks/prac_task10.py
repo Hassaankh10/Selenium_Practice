@@ -61,7 +61,7 @@ from email import encoders
 
 sender = "YOUR_EMAIL@gmail.com"
 receiver = "YOUR_EMAIL@gmail.com"
-app_password = "YOUR_APP_PASSWORD" 
+app_password = "YOUR_APP_PASSWORD"
 
 msg = MIMEMultipart()
 msg["From"] = sender
