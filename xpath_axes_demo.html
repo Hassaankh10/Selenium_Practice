@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XPath Axes Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+    .form-group { margin: 10px 0; }
+    label { display: block; margin-bottom: 4px; color: #555; }
+    input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%; box-sizing: border-box; }
+    .card { background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    h2 { margin-top: 0; }
+  </style>
+</head>
+<body>
+
+  <h1 id="page-title">XPath Axes Demo Page</h1>
+
+  <!-- ANCESTOR / PARENT demo -->
+  <div id="grandparent">
+    <div id="parent-div">
+      <div id="target-element">I am the TARGET element</div>
+    </div>
+  </div>
+
+  <!-- SIBLING demo -->
+  <div id="sibling-container">
+    <div id="sibling-1">Sibling One</div>
+    <div id="sibling-2">Sibling Two (ME)</div>
+    <div id="sibling-3">Sibling Three</div>
+  </div>
+
+  <!-- CHILD / DESCENDANT demo -->
+  <div id="outer">
+    <div id="middle">
+      <div id="inner">Deep child element</div>
+    </div>
+  </div>
+
+  <!-- PRECEDING / FOLLOWING demo (form) -->
+  <div class="card">
+    <h2>Registration Form</h2>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password">
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+    </div>
+  </div>
+
+</body>
+</html>
